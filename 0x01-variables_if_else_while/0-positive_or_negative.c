@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.>
+#include <time.h>
 /**
  * main - start of code
  * Return: 0 when true
