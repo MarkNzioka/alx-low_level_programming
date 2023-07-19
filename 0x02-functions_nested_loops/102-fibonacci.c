@@ -13,14 +13,14 @@ int main(void)
 
 	for (i = 1; i <= 50; i++)
 	{
+		if (a != 20365011074)
+			printf("%d, ", a);
+		else
+			printf("%d\n", a);
 		next = a + b;
 		printf("%d", next);
 		a = b;
 		b = next;
-		if (i < 50)
-			printf("\n");
-		else
-			printf(", ");
 	}
 	return (0);
 }
