@@ -1,25 +1,26 @@
 #include<stdio.h>
-#include"main.h"
 /**
- * main - print fibonacci first 50 digits
+ * main - find fibonacci sequence
  * Return: 0 always
  */
 int main(void)
 {
-	int a, b, i, next;
+	int i;
+	unsigned long num1, num2, sum;
 
-	a = 1;
-	b = 2;
+	num1 = 0;
+	num2 = 1;
 
-	for (i = 1; i <= 50; ++i)
+	for (i = 0; i < 50; ++i)
 	{
-		if (a != 20365011074)
-			printf("%d, ", a);
+		sum = num1 + num2;
+		printf("%lu", sum);
+		num1 = num2;
+		num2 = sum;
+		if (i == 49)
+			printf("\n");
 		else
-			printf("%d\n", a);
-		next = a + b;
-		a = b;
-		b = next;
+			printf(", ");
 	}
 	return (0);
 }
