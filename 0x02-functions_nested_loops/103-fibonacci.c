@@ -5,7 +5,8 @@
  */
 int main(void)
 {
-	unsigned long num1, num2, sum, sum_all;
+	unsigned long num1, num2, sum;
+	float sum_all;
 
 	num1 = 0;
 	num2 = 1;
@@ -20,6 +21,6 @@ int main(void)
 		num1 = num2;
 		num2 = sum;
 	}
-	printf("%lu\n", sum_all);
+	printf("%.0f\n", sum_all);
 	return (0);
 }
