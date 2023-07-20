@@ -7,17 +7,15 @@ void print_most_numbers(void)
 {
 	int a;
 
-	for (a = 0; a <= 9; a++)
+	for (a = 48; a <= 57; a++)
 	{
-		if (a == 2)
+		if (a == 50)
 		{
 			continue;
-			a++;
 		}
-		else if (a == 4)
+		else if (a == 52)
 		{
 			continue;
-			a++;
 		}
 		_putchar(a);
 	}
