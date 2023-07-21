@@ -16,7 +16,7 @@ int main(void)
 		}
 		else if (num == 100)
 		{
-			printf("%d", num);
+			printf("Buzz");
 		}
 		else if (num % 3 == 0)
 		{
