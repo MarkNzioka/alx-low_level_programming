@@ -1,27 +1,30 @@
-#include "main.h"
+#include"main.h"
 /**
- * print_triangle - draw a triangle usig=ng #
+ * print_triangle - draw triangle
  * @size: parameter to be checked
  */
 void print_triangle(int size)
 {
-	if (size <= 0)
-		_putchar('\n');
-	else
+	int num1, num2;
+	
+	if (size > 0)
 	{
-		int a, b;
-
-		for (a = 1; a <= size; a++)
+		for (num1 = 1; num1 <= size; num1++)
 		{
-			for (b = a; b <= size; b++)
+			for ((num2 = size - num1); num2 > 0; num2--)
 			{
 				_putchar(' ');
 			}
-			for (b = 1; b <= a; b++)
+			for (num2 = 0; num2 < num1; num2++)
 			{
 				_putchar('#');
+			}
+			if (num1 == size)
+			{
+				continue;
 			}
 			_putchar('\n');
 		}
 	}
+	_putchar('\n');
 }
