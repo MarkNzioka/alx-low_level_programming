@@ -9,8 +9,8 @@ void puts_half(char *str)
 
 	while (*str)
 	{
-		str++;
 		xter++;
+		str++;
 	}
 	for (i = 0; i < xter; i++)
 		str--;
