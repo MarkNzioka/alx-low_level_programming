@@ -2,7 +2,7 @@
 #include<stdlib.h>
 /**
  * number - determine whether it is a number
- * *num: number to be checked
+ * @num: number to be checked
  * Return: number
  */
 int number(char *num)
