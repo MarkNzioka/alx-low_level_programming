@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		length1++;
 	while (s2[length2] != '\0')
 		length2++;
-	join = (char *)malloc((length1 + length2) * sizeof(char));
+	join = (char *)malloc((length1 + length2 + 1) * sizeof(char));
 	if (!join)
 		return (NULL);
 	while (a < length1)
