@@ -29,9 +29,10 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (b < length2)
 	{
-		join[a + b] = s2[b];
+		join[a] = s2[b];
 		b++;
+		a++;
 	}
-	join[a + b] = '\0';
+	join[a] = '\0';
 	return (join);
 }
