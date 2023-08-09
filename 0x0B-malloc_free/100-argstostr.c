@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (a = 0; a < ac; a++)
 		total_len += length(av[a]) + 1;
-	add = (char *)malloc(total_len * sizeof(char));
+	add = (char *)malloc((total_len + ac - 1 + 1) * sizeof(char));
 	if (!add)
 		return (NULL);
 	for (a = 0; a < ac; a++)
