@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0;
-	long unsigned int j;
+	unsigned long int j;
 	char type;
 
 	FormatSpecifier format_table[] = {
