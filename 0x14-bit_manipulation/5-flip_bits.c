@@ -4,11 +4,12 @@
  * get from one number to another
  * @n: number to flip
  * @m: flipped number
+ * Return: number to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int xor_result = n ^ m;
-	unsigned count = 0;
+	unsigned long int count = 0;
 
 	while (xor_result > 0)
 	{
