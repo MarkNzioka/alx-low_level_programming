@@ -21,22 +21,23 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buffer == NULL)
 	{
 		fclose(file);
-		return 0;
+		return (0);
 	}
 	bytesRead = fread(buffer, sizeof(char), letters, file);
-	if (bytesRead < 0) {
+	if (bytesRead < 0)
+	{
 		fclose(file);
 		free(buffer);
-		return 0;
+		return (0);
 	}
 
 	fclose(file);
-
-	if (write(STDOUT_FILENO, buffer, bytesRead) != bytesRead) {
+	if (write(STDOUT_FILENO, buffer, bytesRead) != bytesRead)
+	{
 		free(buffer);
-		return 0;
+		return (0);
 	}
 
 	free(buffer);
-	return bytesRead;
+	return (bytesRead);
 }
